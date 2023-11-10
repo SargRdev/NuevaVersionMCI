@@ -1,0 +1,81 @@
+.seccion-quienes-somos {
+  display: flex;
+  margin: 0 auto;
+  width: 960px;
+  padding-top: 60px;
+}
+
+.foto-grupo {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.foto-grupo img {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 0 0 0;
+}
+
+.texto-quienes-somos {
+  width: 50%;
+  padding-top:60px;
+}
+
+.texto-quienes-somos h3 {
+  font-family: var(--Permanent-Marker);
+  font-size: 1.50rem;
+  padding: 10px 30px 10px 0;
+  text-transform: uppercase;
+}
+
+.texto-quienes-somos p {
+  text-align: justify;
+  padding: 10px 30px 10px 0;
+  line-height: 1.5;
+  font-family: var(--monserrat);
+}
+
+.imagen-quienes-somos {
+  text-align: center;
+}
+
+@media screen and (max-width:640px), screen and(max-width:480px) {
+
+  .seccion-quienes-somos {
+    width: auto;
+    flex-direction: column;
+    padding:10px 0 20px 0;
+  }
+
+  .foto-grupo {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+  .texto-quienes-somos {
+    width: auto;
+    padding:0 0 0 30px;
+  }
+
+}
+ 
+
+@media screen and (min-width:320px) and (max-width:480px){
+  
+  .seccion-quienes-somos {
+    width: auto;
+    flex-direction: column;
+    padding:10px 0 20px 0;
+  }
+
+  .foto-grupo {
+    width: 100%;
+    padding-right: 30px;
+  }
+
+  .texto-quienes-somos {
+    width: auto;
+    padding:0 0 0 30px;
+  }
+}
+

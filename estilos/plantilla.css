@@ -1,0 +1,295 @@
+:root {
+  --monserrat: Montserrat, sans-serif;
+  --Permanent-Marker: Permanent Marker, cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #10069f;
+  font-family: var(--monserrat);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  background: linear-gradient(rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+    url(/imagenes/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  grid-area: header;
+  background: rgba(238, 238, 238, 0.8);
+}
+
+
+#nav{
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+.bg-light {
+  --bs-bg-opacity: 0;
+}
+
+.topnav {
+  padding-bottom: 10px;
+ 
+}
+
+#navbarNavDropdown {
+  margin-top: 10px;
+  background: linear-gradient(rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.6)), url(/imagenes/FONDO-MUÑECOS.jpg) fixed;
+  background-size: contain;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  width: 7%;
+  z-index: 100;
+}
+
+.letras-todos {
+  position: absolute;
+  width: 20%;
+  z-index: 200;
+}
+
+main {
+  grid-area: main;
+  background: rgba(238, 238, 238, 0.8);
+  padding: 0 30px;
+
+  /*box-shadow: -2px 1px 7px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+.texto-quienes-somos h3,
+.texto-manuales h3 {
+  font-family: var(--Permanent-Marker);
+  text-transform: uppercase;
+  line-height: 3;
+}
+
+.texto-quienes-somos,
+.texto-manuales {
+  text-align: justify;
+}
+
+.imagen-quienes-somos {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.imagen-quienes-somos img {
+  width: 30%;
+}
+
+.imagenes-manual {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /*
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  */
+}
+
+.imagenes a {
+  display: block;
+}
+
+.imagenes {
+  width: auto;
+}
+
+.imagenes img {
+  width: 100%;
+  height: 4.7rem;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: 500ms all;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  font-size: 0.6rem;
+  font-family: var(--monserrat);
+  padding-top: 20px;
+}
+
+footer img {
+  height: 75px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+footer strong {
+  font-family: var(--Permanent-Marker);
+  font-size: 0.7rem;
+}
+
+.flipbook {
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  /* .container-all {
+    width: auto;
+    height: 100vh;
+  }
+*/
+
+  .texto-quienes-somos,
+  .texto-manuales {
+    line-height: 2;
+  }
+
+  .imagen-quienes-somos img {
+    width: 20%;
+  }
+
+  .imagenes-manual {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    /*
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      */
+  }
+
+  .imagenes img {
+    width: 100%;
+    height: 6.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .seccion-quienes-somos {
+    display: flex;
+  }
+
+  .body {
+    width: 60%;
+  }
+
+  .container-all {
+    height: auto;
+  }
+
+ 
+  .texto-quienes-somos {
+    width: 40%;
+    padding-left: 15px;
+  }
+
+  .imagen-quienes-somos img {
+    width: 35%;
+  }
+
+  .seccion-manuales {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .texto-manuales {
+    width: 55%;
+  }
+
+  .imagenes-manual {
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
+    /*
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      */
+  }
+
+
+  .imagenes img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 896px) {
+  header {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .imagen-quienes-somos img {
+    width: 45%;
+  }
+
+  .imagenes-manual {
+    width: 480px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  header {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  #navbarNavDropdown {
+    margin-top: 10px;
+    background: none;
+  }
+
+  main {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .imagen-quienes-somos img {
+    width: 45%;
+  }
+
+  .imagenes-manual {
+    width: 480px;
+    height: 500px;
+  }
+
+}

@@ -1,0 +1,38 @@
+.seccion-flipbook {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 960px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.texto-flipbook {
+  width: 100%;
+}
+
+.texto-flipbook h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 50px 30px;
+}
+
+.flipbook {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:640px){
+
+
+  .seccion-flipbook {
+    width: 100%;
+  } 
+}
+@media screen and (min-width:320px) and (max-width:480px){
+  
+  .seccion-flipbook {
+    width: 100%;
+  } 
+}

@@ -1,0 +1,141 @@
+/*formulario */
+.contenedor-contactanos {
+  width: auto;
+  padding-top: 30px;
+}
+
+form {
+  margin: 70px 5%;
+}
+
+.div-contacto p {
+  font-family: var(--Permanent-Marker);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#completo {
+  display: inline;
+  font-size: 0.8rem;
+}
+
+fieldset {
+  border-style: none;
+}
+
+.tab {
+  margin-left: 50px;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 1.2rem;
+  margin: 10px 0 10px;
+  font-family: var(--Permanent-Marker);
+}
+
+input,
+textarea,select {
+  font-size: 1.2rem;
+  border: none;
+  font-family: var(--Permanent-Marker);
+}
+
+.cambio-color {
+  color: #82b901;
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.input-padron {
+  display: block;
+  padding: 10px 25px;
+  width: 100%;
+  border: none;
+  margin-bottom: 15px;
+}
+
+#select-Ubicacion,
+#select-Ubicacion option,
+#select-Dependencia,
+#select-Dependencia option {
+  font-family: var(--Permanent-Marker);
+}
+
+.label-checkbox {
+  margin: 20px 0;
+}
+
+.hero {
+  text-align: center;
+}
+
+.btnEnviar {
+  width: 100%;
+  margin: 20px auto 0px auto;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #82b901;
+  border: none;
+  border-radius: 10px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.btnEnviar:hover {
+  background-color: #72a105;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-contactanos {
+    width: auto;
+  }
+
+  .div-contacto p {
+    font-size: 1.3rem;
+  }
+
+  .input-padron {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /*formulario*/
+
+
+  .div-contacto p {
+    font-size: 1.2rem;
+  }
+
+  #completo {
+    display: inline;
+    font-size: 0.50rem;
+  }
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+  form {
+    margin: 40px 0;
+  }
+  
+  .div-contacto p {
+    font-size: 1rem;
+  }
+
+  .tab {
+    margin-left: 15px;
+  }
+  
+}
