@@ -155,31 +155,55 @@ input[id="8"]:checked ~ .slide {
 input[id="8"]:checked ~ .pagination .pagination-item[for="8"] {
     background: #fff;
 }
+
+.slide {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transform: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 40s; /* Cambio de duración a 40 segundos */
+    animation-direction: alternate;
+    /*va y regresa la imagen */
+    animation-fill-mode: forwards;
+    /*para que inicie desde la primera imagen*/
+    animation-iteration-count: infinite;
+    /*la animacion sera infinita*/
+}
+
 @keyframes autoplay {
-    12.5%{
-        transform: translate3d(calc(-100% * 0),0,0);
+    0%, 12.5% {
+        transform: translate3d(calc(-100% * 0), 0, 0); /* Primera imagen */
     }
 
-    25%{
-        transform: translate3d(calc(-100% * 1),0,0);
+    12.5%, 25% {
+        transform: translate3d(calc(-100% * 1), 0, 0); /* Segunda imagen */
     }
-    37.5%{
-        transform: translate3d(calc(-100% * 2),0,0);
+
+    25%, 37.5% {
+        transform: translate3d(calc(-100% * 2), 0, 0); /* Tercera imagen */
     }
-    50%{
-        transform: translate3d(calc(-100% * 3),0,0);
+
+    37.5%, 50% {
+        transform: translate3d(calc(-100% * 3), 0, 0); /* Cuarta imagen */
     }
-    62.5%{
-        transform: translate3d(calc(-100% * 4),0,0);
+
+    50%, 62.5% {
+        transform: translate3d(calc(-100% * 4), 0, 0); /* Quinta imagen */
     }
-    75%{
-        transform: translate3d(calc(-100% * 5),0,0);
+
+    62.5%, 75% {
+        transform: translate3d(calc(-100% * 5), 0, 0); /* Sexta imagen */
     }
-    82.5%{
-        transform: translate3d(calc(-100% * 6),0,0);
+
+    75%, 87.5% {
+        transform: translate3d(calc(-100% * 6), 0, 0); /* Séptima imagen */
     }
-    100%{
-        transform: translate3d(calc(-100% * 7),0,0);
+
+    87.5%, 100% {
+        transform: translate3d(calc(-100% * 7), 0, 0); /* Octava imagen */
     }
+}
+
+
 
 }
