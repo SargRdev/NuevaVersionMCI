@@ -1,6 +1,5 @@
-/*formulario */
+/* Formulario */
 .contenedor-contactanos {
-  width: auto;
   padding-top: 30px;
 }
 
@@ -20,7 +19,7 @@ form {
 }
 
 fieldset {
-  border-style: none;
+  border: none;
 }
 
 .tab {
@@ -31,12 +30,13 @@ form label,
 form legend {
   display: block;
   font-size: 1.2rem;
-  margin: 10px 0 10px;
+  margin: 10px 0;
   font-family: var(--Permanent-Marker);
 }
 
 input,
-textarea,select {
+textarea,
+select {
   font-size: 1.2rem;
   border: none;
   font-family: var(--Permanent-Marker);
@@ -56,13 +56,12 @@ textarea {
   display: block;
   padding: 10px 25px;
   width: 100%;
-  border: none;
   margin-bottom: 15px;
 }
 
 #select-Ubicacion,
-#select-Ubicacion option,
 #select-Dependencia,
+#select-Ubicacion option,
 #select-Dependencia option {
   font-family: var(--Permanent-Marker);
 }
@@ -77,7 +76,7 @@ textarea {
 
 .btnEnviar {
   width: 100%;
-  margin: 20px auto 0px auto;
+  margin: 20px auto 0;
   padding: 15px 0;
   font-size: 1.2rem;
   font-weight: bold;
@@ -94,42 +93,28 @@ textarea {
   transform: scale(1.1);
 }
 
+/* Media Queries */
 @media screen and (max-width: 768px) {
-  .contenedor-contactanos {
-    width: auto;
-  }
-
   .div-contacto p {
     font-size: 1.3rem;
-  }
-
-  .input-padron {
-    display: block;
   }
 }
 
 @media screen and (max-width: 640px) {
-  /*formulario*/
-
-
   .div-contacto p {
     font-size: 1.2rem;
   }
 
   #completo {
-    display: inline;
-    font-size: 0.50rem;
+    font-size: 0.5rem;
   }
 }
 
-
-
 @media screen and (max-width: 375px) {
-
   form {
     margin: 40px 0;
   }
-  
+
   .div-contacto p {
     font-size: 1rem;
   }
@@ -137,5 +122,4 @@ textarea {
   .tab {
     margin-left: 15px;
   }
-  
 }

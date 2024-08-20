@@ -158,16 +158,13 @@ input[id="8"]:checked ~ .pagination .pagination-item[for="8"] {
 
 .slide {
     display: flex;
-    transform: translate3d(0, 0, 0);
-    transform: all 600ms;
+    transition: transform 600ms ease;
     animation-name: autoplay;
-    animation-duration: 40s; /* Cambio de duración a 40 segundos */
+    animation-duration: 120s; /* Duración total de la animación */
+    animation-timing-function: ease-in-out;
     animation-direction: alternate;
-    /*va y regresa la imagen */
     animation-fill-mode: forwards;
-    /*para que inicie desde la primera imagen*/
     animation-iteration-count: infinite;
-    /*la animacion sera infinita*/
 }
 
 @keyframes autoplay {
